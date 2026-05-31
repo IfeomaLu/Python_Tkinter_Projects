@@ -18,6 +18,8 @@ class App(tk.Tk):
         self.result = tk.StringVar()
 
        # Widgets for the BMI application
+        titleLabel = tk.Label(text='BMI Health Checker', font=('Montserrat', 18, 'bold'), bg=self['bg'])
+        titleLabel.pack()
         entriesFrame = tk.Frame(self, bg=self['bg'])
         entriesFrame.pack()
         buttonsFrame = tk.Frame(self, bg=self['bg'])
