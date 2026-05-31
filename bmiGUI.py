@@ -6,7 +6,7 @@ class App(tk.Tk):
         # App window properties 
         super().__init__()
         self.title('BMI Calculator')
-        self.config(bg='#E2B3FF')
+        self.config(bg="#ECD4FA")
         # self.geometry('320x190')
         self.minsize(320, 190)
         self.resizable(False, False)
