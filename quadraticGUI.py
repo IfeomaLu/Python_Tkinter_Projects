@@ -7,7 +7,7 @@ class App(tk.Tk):
         # App window properties 
         super().__init__()
         self.title('Quadratic Equation Solver')
-        self.config(bg='#eef2ff')
+        self.config(bg="#bdecfa")
         self.minsize(450, 320)
         self.resizable(False, False)
     
@@ -25,7 +25,7 @@ class App(tk.Tk):
         entriesFrame.pack(padx=10, pady=5)
         buttonsFrame = tk.Frame(self, bg=self['bg'])
         buttonsFrame.pack(padx=5, pady=5)
-        resultLabel = tk.Label(self, text="No computation yet", font=('Avenir', 16), justify='left', textvariable=self.result)
+        resultLabel = tk.Label(self, text="No computation yet", font=('Avenir', 16), justify='left', bg=self['bg'], textvariable=self.result)
         resultLabel.pack(padx=5, pady=(0, 5))
 
         aLabel = tk.Label(entriesFrame, text='Coefficient a:', font=('Avenir', 14), bg=entriesFrame['bg'])
